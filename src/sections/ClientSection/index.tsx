@@ -1,3 +1,5 @@
+import SectionHeading from "../../components/SectionHeading";
+
 const clients = [
   { name: "google", imageSrc: "/googleLogo.svg" },
   { name: "airbnb", imageSrc: "/airbnbLogo.svg" },
@@ -9,8 +11,12 @@ const ClientSection = () => {
   return (
     <section className="flex justify-between">
       <div>
-        <h5 className="font-bold text-2xl">Our Client</h5>
-        <p>Several selected clients, who already belive in our service</p>
+        <SectionHeading
+          text="Our Client"
+          paragraph={
+            "Several selected clients, who already belive in our service"
+          }
+        />
       </div>
       <div>
         <div className="flex">
