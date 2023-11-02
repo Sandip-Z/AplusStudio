@@ -7,9 +7,9 @@ const menuItems = [
   { id: "contact", label: "Contact", link: "#" },
 ];
 
-const Header = () => {
+const Nav = () => {
   return (
-    <header className="flex justify-between mt-5">
+    <nav className="flex justify-between mt-5">
       <div className="my-auto">
         <img src="/logo.svg" alt="A plus" />
       </div>
@@ -22,8 +22,8 @@ const Header = () => {
           ))}
         </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 
-export { Header };
+export { Nav };
