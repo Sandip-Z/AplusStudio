@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <main>
-      <header>header</header>
+      <Header />
       <section>our client section</section>
       <section>Bussiness section</section>
       <section>product section</section>
