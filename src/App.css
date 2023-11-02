@@ -40,3 +40,16 @@
 .custom-rectangle {
   clip-path: path("M7.07175 158.172C-19.0148 80.4252 38.8318 0 120.839 0H422C463.421 0 497 33.5786 497 75V217C497 258.421 463.421 292 422 292H123.901C80.9308 292 42.7643 264.549 29.0954 223.81L7.07175 158.172Z");
 }
+
+.newsletter-custom-leaf {
+  clip-path: path("M178 0L178 178L100 178C44.7715 178 1.58873e-06 133.228 9.30141e-07 78L0 2.12263e-06L178 0Z");
+  background-color: #FFF5DB;
+  position: absolute;
+  bottom: -40px;
+  left:-40px;
+  z-index: -1;
+}
+
+.newsletter-custom-leaf::after{
+  content: " ";
+}
