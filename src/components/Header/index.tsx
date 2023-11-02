@@ -9,7 +9,7 @@ const menuItems = [
 
 const Header = () => {
   return (
-    <header className="flex justify-between px-16 mt-5">
+    <header className="flex justify-between mt-5">
       <div className="my-auto">
         <img src="/logo.svg" alt="A plus" />
       </div>
