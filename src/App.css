@@ -53,3 +53,18 @@
 .newsletter-custom-leaf::after{
   content: " ";
 }
+
+.header-custom-leaf {
+  clip-path: path("M0 0H178V78C178 133.228 133.228 178 78 178H0V0Z");
+  background-color: #FFF5DB;
+  position: absolute;
+  bottom:-100px;
+  right: 100px;
+  z-index: -1;
+  width: 178px;
+  height: 178px;
+}
+
+.header-custom-leaf::after {
+  content: " ";
+}
