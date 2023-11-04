@@ -7,6 +7,7 @@ import { Footer } from "./sections/Footer";
 import { Header } from "./sections/Header";
 import { Nav } from "./sections/Nav";
 import { NewsLetter } from "./sections/NewsLetter";
+import { Testomonial } from "./sections/Testomonial";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ClientSection />
       <BussinessSection />
       <AboutSection />
+      <Testomonial />
       <NewsLetter />
       <Footer />
       <Copyright />

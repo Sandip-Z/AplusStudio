@@ -87,11 +87,11 @@ const Footer = () => {
       </div>
       <div className="flex justify-between ml-48 w-full">
         {FOOTER.map(({ title, links }) => (
-          <div className="mx-10x">
+          <div className="mx-10x" key={title}>
             <h6 className="text-2xl mb-5">{title}</h6>
             <ul>
               {links?.map(({ label, link }) => (
-                <a href={link}>
+                <a href={link} key={label}>
                   <li
                     key={label}
                     className="text-sm text-gray-600 mb-3 ml-1 hover:text-[#2639ED]"

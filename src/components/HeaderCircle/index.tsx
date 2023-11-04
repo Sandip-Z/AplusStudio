@@ -1,8 +1,8 @@
-const HeaderCircle = ({ fill = "#DAE9FF" }) => {
+const HeaderCircle = ({ fill = "#DAE9FF", width = "129", height = "129" }) => {
   return (
     <svg
-      width="129"
-      height="129"
+      width={width}
+      height={height}
       viewBox="0 0 129 129"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
