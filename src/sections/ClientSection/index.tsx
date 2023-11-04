@@ -9,7 +9,7 @@ const clients = [
 
 const ClientSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-between">
+    <section className="flex flex-col lg:flex-row lg:justify-between px-5 sm:px-0">
       <div className="text-center lg:text-left lg:w-[280px] lg:mb-0">
         <SectionHeading
           text="Our Client"

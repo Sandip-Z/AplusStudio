@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 mt-5">
       <div className="my-auto">
-        <div className="lg:w-[500px] text-center lg:text-left">
+        <div className="lg:w-[500px] text-center lg:text-left px-5 sm:px-0">
           <SectionHeading text={HEADING} paragraph={PARAGRPH} />
         </div>
         <div className="mt-8 text-center lg:text-left mb-8 lg:mb-0">
@@ -21,7 +21,7 @@ const Header = () => {
           <Circles />
         </div>
       </div>
-      <div className="ml-auto relative">
+      <div className="ml-auto relative pl-5 sm:pl-0">
         <div className="absolute z-[-1] lg:left-[-50px] left-[-70px] top-[-40px] lg:top-[0px]">
           <HeaderCircle />
         </div>

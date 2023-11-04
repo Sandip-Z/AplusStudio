@@ -11,11 +11,11 @@ import { Testomonial } from "./sections/Testomonial";
 
 function App() {
   return (
-    <main className="ml-5[x] lg:mr-0 lg:ml-16 px-5 lg:px-0">
+    <main className="ml-5[x] lg:mr-0 lg:ml-16">
       {/* <Nav /> */}
       <Header />
       <ClientSection />
-      {/* <BussinessSection /> */}
+      <BussinessSection />
       {/* <AboutSection /> */}
       {/* <Testomonial /> */}
       {/* <NewsLetter /> */}
