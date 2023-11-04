@@ -1,4 +1,5 @@
 import "./App.css";
+import { BussinessSection } from "./sections/Bussiness";
 import { ClientSection } from "./sections/ClientSection";
 import { Header } from "./sections/Header";
 import { Nav } from "./sections/Nav";
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <Header />
       <ClientSection />
+      <BussinessSection />
       <NewsLetter />
     </main>
   );
