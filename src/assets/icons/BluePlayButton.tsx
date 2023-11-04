@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const BluePlayButton = () => {
+  const [hover, setHover] = useState(false);
+
   return (
     <svg
       width="78"
@@ -7,6 +11,8 @@ const BluePlayButton = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="hover:cursor-pointer"
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
     >
       <g clip-path="url(#clip0_2_593)">
         <rect
@@ -15,11 +21,15 @@ const BluePlayButton = () => {
           width="42.9796"
           height="42.9796"
           fill="white"
+          onMouseOver={() => setHover(true)}
+          onMouseOut={() => setHover(false)}
         />
         <path
           d="M39 0C17.55 0 0 17.55 0 39C0 60.45 17.55 78 39 78C60.45 78 78 60.45 78 39C78 17.55 60.45 0 39 0ZM31.2 56.55V21.45L54.6 39L31.2 56.55Z"
           fill="#2639ED"
-          className="hover:fill-[#CD201F] ease-in-out duration-300"
+          className={`${
+            hover ? "fill-[#CD201F]" : "fill-[#2639ED]"
+          } ease-in-out duration-300`}
         />
       </g>
       <defs>

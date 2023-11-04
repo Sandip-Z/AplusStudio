@@ -18,10 +18,10 @@ const ClientSection = () => {
           }
         />
       </div>
-      <div>
+      <div className="mr-20">
         <div className="flex">
           {clients.map(({ name, imageSrc }) => (
-            <img key={name} src={imageSrc} alt={name} />
+            <img key={name} src={imageSrc} className="mx-5" alt={name} />
           ))}
         </div>
       </div>

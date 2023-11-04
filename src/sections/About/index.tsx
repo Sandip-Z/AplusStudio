@@ -21,7 +21,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="w-full my-auto">
-        <div className="w-[480px] mx-auto relative">
+        <div className="w-[480px] ml-auto mr-20 relative">
           <SectionHeading
             text="Great Digital Product Agency since 2016"
             paragraph="Our Business Plan is a written document describing a company's core business activites, objectives, and how it plans to achieve its goals. Our goal is to provide our client high quality Product with modern idea accordingly their budgets and according to their reuirements."

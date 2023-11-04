@@ -32,13 +32,13 @@ const SERVICES = [
     title: "Market Analysis Project",
     detail: "Protocols apart from aengage models, pricing billing",
     icon: MarketAnalysisIcon,
-    iconBackground: "bg-[#00DA71]",
+    iconBackground: "bg-[#DEFFEE]",
   },
 ];
 
 const BussinessSection = () => {
   return (
-    <section className="flex my-20">
+    <section className="flex mt-10 mb-40">
       <div className="my-auto w-[550px] relative">
         <div className="service-custom-leaf" />
         <SectionHeading
@@ -58,6 +58,7 @@ const BussinessSection = () => {
               heading={title}
               subheading={detail}
               iconBackground={iconBackground}
+              key={title}
             />
           ))}
         </div>
