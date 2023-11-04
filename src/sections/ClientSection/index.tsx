@@ -9,8 +9,8 @@ const clients = [
 
 const ClientSection = () => {
   return (
-    <section className="flex justify-between">
-      <div className="w-[280px]">
+    <section className="flex flex-col lg:flex-row lg:justify-between">
+      <div className="text-center lg:text-left lg:w-[280px] lg:mb-0">
         <SectionHeading
           text="Our Client"
           paragraph={
@@ -18,10 +18,15 @@ const ClientSection = () => {
           }
         />
       </div>
-      <div className="mr-20 my-auto">
-        <div className="flex">
+      <div className="mx-auto lg:ml-0 lg:mr-20 my-auto">
+        <div className="flex gap-10 overflow-auto py-10">
           {clients.map(({ name, imageSrc }) => (
-            <img key={name} src={imageSrc} className="mx-5" alt={name} />
+            <img
+              key={name}
+              src={imageSrc}
+              alt={name}
+              className="w-32 lg:w-auto"
+            />
           ))}
         </div>
       </div>
