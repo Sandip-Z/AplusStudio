@@ -69,6 +69,21 @@
   content: " ";
 }
 
+.about-custom-leaf {
+  clip-path: path("M0 0H178V78C178 133.228 133.228 178 78 178H0V0Z");
+  background-color: #EFF1FF;
+  position: absolute;
+  top:-40px;
+  left: -40px;
+  z-index: -1;
+  width: 178px;
+  height: 178px;
+}
+
+.about-custom-leaf::after {
+  content: " ";
+}
+
 .service-custom-leaf {
   clip-path: path("M178 178L0 178L6.81898e-06 100C1.16472e-05 44.7715 44.7715 -1.16472e-05 100 -6.81898e-06L178 0L178 178Z");
   background-color: #FFF5DB;

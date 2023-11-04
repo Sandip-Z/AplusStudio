@@ -1,4 +1,4 @@
-const HeaderCircle = () => {
+const HeaderCircle = ({ fill = "#DAE9FF" }) => {
   return (
     <svg
       width="129"
@@ -7,7 +7,7 @@ const HeaderCircle = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="64.5" cy="64.5" r="64.5" fill="#DAE9FF" />
+      <circle cx="64.5" cy="64.5" r="64.5" fill={fill} />
     </svg>
   );
 };

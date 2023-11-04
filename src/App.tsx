@@ -1,4 +1,5 @@
 import "./App.css";
+import { AboutSection } from "./sections/About";
 import { BussinessSection } from "./sections/Bussiness";
 import { ClientSection } from "./sections/ClientSection";
 import { Header } from "./sections/Header";
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <ClientSection />
       <BussinessSection />
+      <AboutSection />
       <NewsLetter />
     </main>
   );

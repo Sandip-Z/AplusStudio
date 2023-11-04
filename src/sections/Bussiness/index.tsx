@@ -39,7 +39,7 @@ const SERVICES = [
 const BussinessSection = () => {
   return (
     <section className="flex my-20">
-      <div className="my-auto w-[375px] relative">
+      <div className="my-auto w-[550px] relative">
         <div className="service-custom-leaf" />
         <SectionHeading
           text="How can we help your Bussiness?"
