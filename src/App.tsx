@@ -16,7 +16,7 @@ function App() {
       <Header />
       <ClientSection />
       <BussinessSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <Testomonial /> */}
       {/* <NewsLetter /> */}
       {/* <Footer /> */}
