@@ -9,20 +9,20 @@ const PARAGRPH =
 
 const Header = () => {
   return (
-    <header className="flex relative space-between mb-40 mt-5">
+    <header className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 mt-5">
       <div className="my-auto">
-        <div className="w-[500px]">
+        <div className="lg:w-[500px] text-center lg:text-left px-5 sm:px-0">
           <SectionHeading text={HEADING} paragraph={PARAGRPH} />
         </div>
-        <div className="mt-8">
+        <div className="mt-8 text-center lg:text-left mb-8 lg:mb-0">
           <Button label="Contact Now" />
         </div>
-        <div className="absolute bottom-[35px] z-[-1] left-[-40px]">
+        <div className="hidden lg:block absolute lg:bottom-[35px] z-[-1] lg:left-[-40px]">
           <Circles />
         </div>
       </div>
-      <div className="ml-auto relative">
-        <div className="absolute z-[-1] left-[-50px]">
+      <div className="ml-auto relative pl-5 sm:pl-0">
+        <div className="absolute z-[-1] lg:left-[-50px] left-[-70px] top-[-40px] lg:top-[0px]">
           <HeaderCircle />
         </div>
         <div>
@@ -33,7 +33,7 @@ const Header = () => {
             height="512px"
           />
         </div>
-        <div className="header-custom-leaf" />
+        <div className="header-custom-leaf hidden sm:block" />
       </div>
     </header>
   );

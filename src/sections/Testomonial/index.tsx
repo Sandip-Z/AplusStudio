@@ -6,31 +6,31 @@ import { Slider } from "../../components/Slider";
 
 const Testomonial = () => {
   return (
-    <section>
-      <div className="text-center">
+    <section className="mb-10">
+      <div className="text-center px-5 lg:px-0">
         <SectionHeading
           text="What our happy client say"
           paragraph="Several selected clients, who already believe in our service."
         />
       </div>
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         <div className="relative">
           <Slider />
-          <div className="absolute bottom-0 left-[20px] z-[-1]">
+          <div className="absolute bottom-0 left-[20px] z-[-1] hidden lg:block">
             <RedCircle />
           </div>
-          <div className="absolute top-[-15px] left-[300px] z-[-1] w-[175px] overflow-hidden">
+          <div className="absolute top-[-15px] left-[300px] z-[-1] w-[175px] overflow-hidden hidden sm:block">
             <Circles />
           </div>
         </div>
-        <div className="ml-auto mr-20 relative">
+        <div className="ml-auto mr-20 relative hidden lg:block">
           <img
             src="/clientsGroup.png"
             width={300}
             height={355}
             alt="A+ Studios clients"
           />
-          <div className="absolute top-20 z-[-1]">
+          <div className="absolute top-20 z-[-1] hidden sm:block">
             <HeaderCircle fill="#FFF5DB" width="184" height="184" />
           </div>
         </div>
