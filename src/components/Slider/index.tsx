@@ -68,11 +68,11 @@ const Slider = () => {
   }, [currentIndex]);
 
   return (
-    <div className="flex">
-      <div className="custom-clip-path-for-slider">
+    <div className="flex flex-col lg:flex-row">
+      <div className="custom-clip-path-for-slider mb-10 lg:mb-0">
         <img src={DATA[currentIndex]?.image} alt="" />
       </div>
-      <div className="w-[500px] my-auto">
+      <div className="lg:w-[500px] my-auto px-5 sm:px-10 lg:px-0">
         <h6 className="text-2xl pb-4 font-bold">{DATA[currentIndex].name}</h6>
         <p className="text-base text-gray-600">{DATA[currentIndex].review}</p>
         <div className="flex gap-4 mt-8">
