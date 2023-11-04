@@ -10,7 +10,7 @@ const clients = [
 const ClientSection = () => {
   return (
     <section className="flex justify-between">
-      <div>
+      <div className="w-[280px]">
         <SectionHeading
           text="Our Client"
           paragraph={
@@ -18,7 +18,7 @@ const ClientSection = () => {
           }
         />
       </div>
-      <div className="mr-20">
+      <div className="mr-20 my-auto">
         <div className="flex">
           {clients.map(({ name, imageSrc }) => (
             <img key={name} src={imageSrc} className="mx-5" alt={name} />
