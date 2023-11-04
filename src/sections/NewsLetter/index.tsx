@@ -4,26 +4,29 @@ import SectionHeading from "../../components/SectionHeading";
 
 const NewsLetter = () => {
   return (
-    <div className="relative my-40 mr-20">
-      <section className="bg-[#F4F9FF] rounded-[75px] flex justify-between">
-        <div className="py-20 px-20">
+    <div className="relative my-32 lg:my-40 lg:mr-20 px-5 lg:px-0">
+      <section className="bg-[#F4F9FF] rounded-[75px] flex flex-col lg:flex-row lg:justify-between">
+        <div className="lg:py-20 px-5 py-10 lg:px-20 text-center">
           <SectionHeading
             text="Subscribe Newsletter"
             paragraph="I will update good news and promotion service not spam"
           />
         </div>
-        <div className="bg-[#2639ED] w-[550px] relative rounded-[75px] py-20[x] custom-rectangle">
-          <form className="bg-white py-1 pl-5 rounded-full w-[400px] absolute left-[-80px] top-[38%] shadow z-100">
+        <div className="bg-[#2639ED] lg:w-[550px] lg:relative rounded-[75px] py-20 lg:custom-rectangle">
+          <form className="lg:bg-white py-1 px-5 lg:px-0 lg:pl-5 rounded-full lg:w-[400px] flex flex-col lg:flex-row lg:absolute lg:left-[-80px] lg:top-[38%] lg:shadow z-100">
             <input
               placeholder="Enter your email address"
-              className="w-[238px]"
+              className="lg:w-[238px] rounded-full p-3 lg:p-0"
+              type="email"
             />
-            <Button label="Contact Now" />
+            <div className="mr-2 lg:mr-0 mt-10 lg:mt-0 text-center">
+              <Button label="Contact Now" />
+            </div>
           </form>
         </div>
       </section>
       <div className="bg-red-200 absolute w-[178px] h-[178px] newsletter-custom-leaf" />
-      <div className="absolute top-[-60px] right-[-40px] z-[-1] w-[175px] overflow-hidden">
+      <div className="absolute top-[-60px] right-[0px] lg:right-[-40px] z-[-1] w-[175px] overflow-hidden">
         <Circles />
       </div>
     </div>

@@ -18,7 +18,7 @@ function App() {
       <BussinessSection />
       <AboutSection />
       <Testomonial />
-      {/* <NewsLetter /> */}
+      <NewsLetter />
       {/* <Footer /> */}
       {/* <Copyright /> */}
     </main>

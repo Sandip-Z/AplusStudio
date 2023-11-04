@@ -74,7 +74,9 @@ const Slider = () => {
       </div>
       <div className="lg:w-[500px] my-auto px-5 sm:px-10 lg:px-0">
         <h6 className="text-2xl pb-4 font-bold">{DATA[currentIndex].name}</h6>
-        <p className="text-base text-gray-600">{DATA[currentIndex].review}</p>
+        <p className="text-base text-gray-600 min-h-[150px] sm:min-h-[100px] lg:min-h-[120px]">
+          {DATA[currentIndex].review}
+        </p>
         <div className="flex gap-4 mt-8">
           {DATA?.map((_, index) => (
             <div
