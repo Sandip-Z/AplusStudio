@@ -71,7 +71,7 @@ const FOOTER = [
 
 const Footer = () => {
   return (
-    <footer className="border-t-[1px] border-b-[1px] border-[#F1F1F1] mr-20 pt-16 pb-8 flex">
+    <footer className="border-t-[1px] border-b-[1px] border-[#F1F1F1] mr-20 pt-16 pb-8 hidden lg:flex">
       <div className="w-[390px]">
         <img src="/logo.svg" alt="A+ Studio" />
         <p className="mt-6 text-sm text-gray-600">

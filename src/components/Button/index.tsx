@@ -1,10 +1,18 @@
 interface IButtonProps {
   label: string;
+  bgColor?: string;
+  textColor?: string;
 }
 
-const Button = ({ label }: IButtonProps) => {
+const Button = ({
+  label,
+  bgColor = "bg-blue-800",
+  textColor = "text-white",
+}: IButtonProps) => {
   return (
-    <button className="bg-blue-800 text-white px-5 py-2 rounded-full">
+    <button
+      className={`${bgColor} ${textColor} px-5 py-2 rounded-full shadow-lg`}
+    >
       {label}
     </button>
   );

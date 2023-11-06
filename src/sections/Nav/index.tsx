@@ -9,7 +9,7 @@ const menuItems = [
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between mt-5">
+    <nav className="justify-between mt-5 mr-20 hidden lg:flex">
       <div className="my-auto">
         <img src="/logo.svg" alt="A plus" />
       </div>

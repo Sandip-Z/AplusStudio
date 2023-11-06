@@ -38,20 +38,20 @@ const SERVICES = [
 
 const BussinessSection = () => {
   return (
-    <section className="flex mt-10 mb-40">
-      <div className="my-auto w-[550px] relative">
-        <div className="service-custom-leaf" />
+    <section className="flex flex-col lg:flex-row mt-20 lg:mt-10 mb-20 lg:mb-40 px-5 sm:px-0">
+      <div className="my-auto lg:w-[550px] relative text-center lg:text-left">
+        <div className="service-custom-leaf hidden lg:block" />
         <SectionHeading
           text="How can we help your Bussiness?"
           paragraph="We build readymade websites, mobile applications, and elaborate online business services."
         />
-        <div className="absolute mt-32">
+        <div className="absolute mt-16 hidden sm:block">
           <Circles />
         </div>
       </div>
-      <div className="w-full relative">
-        <div className="service-custom-bg" />
-        <div className="grid grid-cols-2 ml-auto mr-10 gap-8 service-grid w-[750px]">
+      <div className="w-full relative sm:mt-20 lg:mt-0 overflow-x-hidden lg:overflow-x-visible pb-5">
+        <div className="service-custom-bg hidden sm:block overflow-hidden" />
+        <div className="grid sm:grid-cols-2 lg:ml-auto lg:mr-10 gap-8 service-grid lg:w-[750px] p-10">
           {SERVICES.map(({ title, detail, icon, iconBackground }) => (
             <BussinessBox
               Icon={icon}
@@ -62,7 +62,7 @@ const BussinessSection = () => {
             />
           ))}
         </div>
-        <div className="absolute bottom-[40px] right-[50px]">
+        <div className="absolute bottom-[20px] right-[0px] sm:right-[25px]x sm:bottom-[100px] sm:right-[50px] overflow-hidden">
           <RedCircle />
         </div>
       </div>

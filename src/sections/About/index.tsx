@@ -4,24 +4,24 @@ import SectionHeading from "../../components/SectionHeading";
 
 const AboutSection = () => {
   return (
-    <section className="flex mb-32">
-      <div className="w-[830px] relative">
+    <section className="flex flex-col lg:flex-row mb-16 lg:mb-32 p-5 sm:px-10 lg:p-0">
+      <div className="mx-auto lg:w-[830px] relative">
         <img
           src="/aboutImage.png"
           alt="Aplus members in board meeting."
           width={550}
           height={372}
-          className="shadow-lg"
+          className="shadow-lg lg:w-[550px] lg:h-[372px]"
         />
-        <div className="absolute top-[40%] left-[40%]">
+        <div className="absolute top-[40%] left-[40%] sm:left-[42%]">
           <BluePlayButton />
         </div>
-        <div className="absolute bottom-[-60px] right-[-50px] z-[-1]">
+        <div className="absolute bottom-[-60px] right-[-50px] z-[-1] hidden lg:block">
           <HeaderCircle fill="#FFF5DB" />
         </div>
       </div>
       <div className="w-full my-auto">
-        <div className="w-[480px] ml-auto mr-20 relative">
+        <div className="lg:w-[480px] ml-auto lg:mr-20 relative pt-10 lg:pt-0">
           <SectionHeading
             text="Great Digital Product Agency since 2016"
             paragraph="Our Business Plan is a written document describing a company's core business activites, objectives, and how it plans to achieve its goals. Our goal is to provide our client high quality Product with modern idea accordingly their budgets and according to their reuirements."

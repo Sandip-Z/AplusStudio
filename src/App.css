@@ -115,13 +115,17 @@
   content: " ";
 }
 
-.service-grid >  div:nth-child(1){
-  margin-top: 80px;
+@media screen and (min-width: 768px) {
+  
+  .service-grid >  div:nth-child(1){
+    margin-top: 80px;
+  }
+  
+  .service-grid >  div:nth-child(4){
+    margin-top: -80px;
+  }
 }
 
-.service-grid >  div:nth-child(4){
-  margin-top: -80px;
-}
 
 .custom-clip-path-for-slider {
   clip-path: path("M40 224.5C40 117.081 127.081 30 234.5 30H429V224.5C429 331.919 341.919 419 234.5 419C127.081 419 40 331.919 40 224.5Z");
