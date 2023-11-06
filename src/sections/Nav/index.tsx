@@ -16,9 +16,9 @@ const Nav = () => {
       <div>
         <ul className="flex">
           {menuItems.map(({ id, label }) => (
-            <li key={id} className="mx-5 p-2">
-              {label}
-            </li>
+            <a key={id} href="#">
+              <li className="mx-5 p-2">{label}</li>
+            </a>
           ))}
         </ul>
       </div>
