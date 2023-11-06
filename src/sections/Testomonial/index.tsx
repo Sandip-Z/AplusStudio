@@ -16,10 +16,10 @@ const Testomonial = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="relative">
           <Slider />
-          <div className="absolute bottom-0 left-[20px] z-[-1] hidden lg:block">
+          <div className="absolute lg:bottom-0 lg:left-[20px] sm:bottom-[40%] sm:left-[25%] z-[-1] hidden sm:block">
             <RedCircle />
           </div>
-          <div className="absolute top-[-15px] left-[300px] z-[-1] w-[175px] overflow-hidden hidden sm:block">
+          <div className="absolute top-[-15px] left-[300px] sm:top-[-15px] sm:left-[517px] lg:top-[-15px] lg:left-[300px] z-[-1] w-[175px] overflow-hidden hidden sm:block">
             <Circles />
           </div>
         </div>
