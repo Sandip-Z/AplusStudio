@@ -6,7 +6,9 @@ interface SectionHeadingProps {
 const SectionHeading = ({ text, paragraph }: SectionHeadingProps) => {
   return (
     <>
-      <h5 className="font-bold text-[40px] relative z-10">{text}</h5>
+      <h5 className="font-bold text-2xl lg:text-[40px] relative z-10">
+        {text}
+      </h5>
       {paragraph ? (
         <p className="mt-8 leading-5 text-[#565656] leading-6 relative z-10">
           {paragraph}

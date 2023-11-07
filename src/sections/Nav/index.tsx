@@ -28,9 +28,9 @@ const Nav = () => {
         </div>
       </nav>
 
-      <nav className="flex justify-between lg:hidden bg-blue-800 py-5x px-10x fixed w-[100vw] h-[70px] z-[9999] px-10">
+      <nav className="flex justify-between lg:hidden bg-[#2639ED] py-5x px-10x fixed w-[100vw] h-[70px] z-[9999] px-10">
         <div className="my-auto">
-          <img src="/logo.svg" alt="A plus" />
+          <img src="/logo.svg" alt="A plus" className="invert" />
         </div>
         <div className="my-auto">
           <button onClick={() => setShowNav(!showNav)}>
