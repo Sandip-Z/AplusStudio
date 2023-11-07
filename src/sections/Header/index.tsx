@@ -9,7 +9,7 @@ const PARAGRPH =
 
 const Header = () => {
   return (
-    <header className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 mt-5">
+    <header className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 lg:mt-5 pt-32 lg:pt-0">
       <div className="my-auto">
         <div className="lg:w-[500px] text-center lg:text-left px-5 sm:px-0">
           <SectionHeading text={HEADING} paragraph={PARAGRPH} />
