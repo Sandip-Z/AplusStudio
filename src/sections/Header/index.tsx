@@ -2,6 +2,7 @@ import { Button } from "../../components/Button";
 import { Circles } from "../../components/Circles";
 import { HeaderCircle } from "../../components/HeaderCircle";
 import SectionHeading from "../../components/SectionHeading";
+import { motion } from "framer-motion";
 
 const HEADING = "A Digital Product Agency";
 const PARAGRPH =
@@ -12,11 +13,16 @@ const Header = () => {
     <header className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 lg:mt-5 pt-32 lg:pt-0">
       <div className="my-auto">
         <div className="lg:w-[500px] text-center lg:text-left px-5 sm:px-0">
-          <SectionHeading text={HEADING} paragraph={PARAGRPH} />
+          <SectionHeading text={HEADING} paragraph={PARAGRPH} id="header" />
         </div>
-        <div className="mt-8 text-center lg:text-left mb-8 lg:mb-0">
+        <motion.div
+          className="mt-8 text-center lg:text-left mb-8 lg:mb-0"
+          initial={{ y: 0.5, scale: 0.9, opacity: 0 }}
+          animate={{ y: 0, scale: 1, opacity: 1 }}
+          transition={{ type: "keyframe", stiffness: 100, delay: 0.4 }}
+        >
           <Button label="Contact Now" />
-        </div>
+        </motion.div>
         <div className="hidden lg:block absolute lg:bottom-[35px] z-[-1] lg:left-[-40px]">
           <Circles />
         </div>
@@ -26,7 +32,7 @@ const Header = () => {
           <HeaderCircle />
         </div>
         <div>
-          <img
+          <motion.img
             src="/headerImage.png"
             alt="A+ Studio members on board meeting."
             width="754px"

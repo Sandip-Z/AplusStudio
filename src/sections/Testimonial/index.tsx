@@ -4,7 +4,7 @@ import { HeaderCircle } from "../../components/HeaderCircle";
 import SectionHeading from "../../components/SectionHeading";
 import { Slider } from "../../components/Slider";
 
-const Testomonial = () => {
+const Testimonial = () => {
   return (
     <section className="mb-10">
       <div className="text-center px-5 lg:px-0">
@@ -39,4 +39,4 @@ const Testomonial = () => {
   );
 };
 
-export { Testomonial };
+export { Testimonial };

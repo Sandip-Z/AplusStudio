@@ -1,22 +1,50 @@
+import { motion } from "framer-motion";
+
 interface SectionHeadingProps {
   text: string;
   paragraph?: string;
+  id?: string;
 }
 
-const SectionHeading = ({ text, paragraph }: SectionHeadingProps) => {
+const fadeInAnimationVariants = {
+  initial: { x: -10, opacity: 0 },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 100, delay: 0.5 },
+  },
+};
+
+const SectionHeading = ({ text, paragraph, id }: SectionHeadingProps) => {
   return (
-    <>
-      <h5 className="font-bold text-2xl lg:text-[40px] relative z-10">
+    <div>
+      <motion.h5
+        className="font-bold text-2xl lg:text-[40px] relative z-10 leading-[50px]"
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+      >
         {text}
-      </h5>
+      </motion.h5>
       {paragraph ? (
-        <p className="mt-8 leading-5 text-[#565656] leading-6 relative z-10">
+        <motion.p
+          className="mt-8 leading-5 text-[#565656] leading-6 relative z-10"
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+        >
           {paragraph}
-        </p>
+        </motion.p>
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 };
 
