@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AplusStudio/static/css/main.82699789.css",
+    "main.js": "/AplusStudio/static/js/main.8ce88015.js",
+    "static/js/787.fc845b26.chunk.js": "/AplusStudio/static/js/787.fc845b26.chunk.js",
+    "index.html": "/AplusStudio/index.html",
+    "main.82699789.css.map": "/AplusStudio/static/css/main.82699789.css.map",
+    "main.8ce88015.js.map": "/AplusStudio/static/js/main.8ce88015.js.map",
+    "787.fc845b26.chunk.js.map": "/AplusStudio/static/js/787.fc845b26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82699789.css",
+    "static/js/main.8ce88015.js"
+  ]
+}
