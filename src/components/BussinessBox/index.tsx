@@ -1,3 +1,14 @@
+import { motion } from "framer-motion";
+
+const bussinessCardAnimationVariants = {
+  initial: { scale: 0, opacity: 0 },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: { type: "spring", delay: 0.2 },
+  },
+};
+
 interface IBussinessProps {
   Icon: any;
   heading: string;
@@ -12,7 +23,15 @@ const BussinessBox = ({
   iconBackground,
 }: IBussinessProps) => {
   return (
-    <div className="rounded-[40px] shadow-lg w-[auto] sm:w-[308px] sm:h-[379px] p-8 bg-white z-10 border lg:border-0">
+    <motion.div
+      className="rounded-[40px] shadow-lg w-[auto] sm:w-[308px] sm:h-[379px] p-8 bg-white z-10 border lg:border-0"
+      variants={bussinessCardAnimationVariants}
+      initial="initial"
+      whileInView={"animate"}
+      viewport={{
+        once: true,
+      }}
+    >
       <div
         className={`${iconBackground} w-[121px] h-[121px] flex justify-center m-auto items-center rounded-[20px]`}
       >
@@ -24,7 +43,7 @@ const BussinessBox = ({
           {subheading}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

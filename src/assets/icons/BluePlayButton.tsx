@@ -14,7 +14,7 @@ const BluePlayButton = () => {
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
     >
-      <g clip-path="url(#clip0_2_593)">
+      <g clipPath="url(#clip0_2_593)">
         <rect
           x="20.6939"
           y="17.5102"

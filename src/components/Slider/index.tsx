@@ -37,7 +37,6 @@ const DATA = [
       "Their product lineup boasts a wide array of exclusive items, designed to make a statement. Stand out from the crowd with fashion-forward apparel, avant-garde accessories, and quirky home",
   },
 ];
-// #2639ED
 
 const SliderDOT = ({ fill = "#E7F0FC" }) => (
   <svg
