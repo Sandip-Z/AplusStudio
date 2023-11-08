@@ -1,17 +1,34 @@
 import { BluePlayButton } from "../../assets/icons/BluePlayButton";
 import { HeaderCircle } from "../../components/HeaderCircle";
 import SectionHeading from "../../components/SectionHeading";
+import { motion } from "framer-motion";
+
+const AboutSectionAnimationVariation = {
+  initial: { opacity: 0, x: 20 },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.4,
+    },
+  },
+};
 
 const AboutSection = () => {
   return (
     <section className="flex flex-col lg:flex-row mb-16 lg:mb-32 p-5 sm:px-10 lg:p-0">
       <div className="mx-auto lg:w-[830px] relative">
-        <img
+        <motion.img
           src="/aboutImage.png"
           alt="Aplus members in board meeting."
           width={550}
           height={372}
           className="shadow-lg lg:w-[550px] lg:h-[372px]"
+          viewport={{ once: true }}
+          variants={AboutSectionAnimationVariation}
+          initial={"initial"}
+          whileInView={"animate"}
         />
         <div className="absolute top-[40%] left-[40%] sm:left-[42%]">
           <BluePlayButton />

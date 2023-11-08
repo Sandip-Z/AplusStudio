@@ -37,6 +37,14 @@ const Header = () => {
             alt="A+ Studio members on board meeting."
             width="754px"
             height="512px"
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: "20px" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              type: "spring",
+              duration: 0.4,
+              staggerDirection: 10,
+            }}
           />
         </div>
         <div className="header-custom-leaf hidden sm:block" />
