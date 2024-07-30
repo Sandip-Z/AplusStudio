@@ -38,7 +38,10 @@ const SERVICES = [
 
 const BussinessSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row mt-20 lg:mt-10 mb-20 lg:mb-40 px-5 sm:px-0">
+    <section
+      className="flex flex-col lg:flex-row mt-20 lg:mt-10 mb-20 lg:mb-40 px-5 sm:px-0"
+      id="what-we-do"
+    >
       <div className="my-auto lg:w-[550px] relative text-center lg:text-left">
         <div className="service-custom-leaf hidden lg:block" />
         <SectionHeading

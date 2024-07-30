@@ -58,7 +58,7 @@ const redCircleAnimationVariant = {
 
 const Testimonial = () => {
   return (
-    <section className="mb-10">
+    <section className="mb-10" id="project">
       <div className="text-center px-5 lg:px-0">
         <SectionHeading
           text="What our happy client say"

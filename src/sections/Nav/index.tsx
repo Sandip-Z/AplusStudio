@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const menuItems = [
-  { id: "home", label: "Home", link: "#" },
-  { id: "what_we_do", label: "What We Do", link: "#" },
-  { id: "service", label: "Service", link: "#" },
-  { id: "project", label: "Project", link: "#" },
-  { id: "blog", label: "Blog", link: "#" },
-  { id: "contact", label: "Contact", link: "#" },
+  { id: "home", label: "Home", link: "#home" },
+  { id: "what-we-do", label: "What We Do", link: "#what-we-do" },
+  { id: "service", label: "Service", link: "#service" },
+  { id: "project", label: "Project", link: "#project" },
+  { id: "blog", label: "Blog", link: "blog.aplusstudio.com" },
+  { id: "contact", label: "Contact", link: "#contact" },
 ];
 
 const Nav = () => {
@@ -19,8 +19,13 @@ const Nav = () => {
         </div>
         <div>
           <ul className="flex">
-            {menuItems.map(({ id, label }) => (
-              <a key={id} href="#">
+            {menuItems.map(({ id, label, link }) => (
+              <a
+                key={id}
+                href={link}
+                target={id === "blog" ? "_blank" : "_self"}
+                rel="noreferrer"
+              >
                 <li className="mx-5 p-2">{label}</li>
               </a>
             ))}
@@ -44,8 +49,13 @@ const Nav = () => {
       </nav>
       <aside className={`${showNav ? "block mobile-navigation" : "hidden"}`}>
         <ul className="fixed h-[100vh] w-[100vw] z-[100] bg-white flex flex-col text-right">
-          {menuItems.map(({ id, label }) => (
-            <a key={id} href="#">
+          {menuItems.map(({ id, label, link }) => (
+            <a
+              key={id}
+              href={link}
+              target={id === "blog" ? "_blank" : "_self"}
+              rel="noreferrer"
+            >
               <li className="p-5 px-10 hover:bg-gray-200">{label}</li>
             </a>
           ))}
