@@ -18,7 +18,7 @@ const AboutSectionAnimationVariation = {
 const AboutSection = () => {
   return (
     <section
-      className="flex flex-col lg:flex-row mb-16 lg:mb-32 p-5 sm:px-10 lg:p-0"
+      className="flex flex-col lg:flex-row  px-5 sm:px-10 pt-20"
       id="service"
     >
       <div className="mx-auto lg:w-[830px] relative">

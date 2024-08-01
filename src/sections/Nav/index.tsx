@@ -13,7 +13,7 @@ const Nav = () => {
   const [showNav, setShowNav] = useState(false);
   return (
     <>
-      <nav className="justify-between mt-5 mr-20 hidden lg:flex">
+      <nav className="fixed py-3 px-7 mt-[-20px] w-[100vw] justify-between hidden lg:flex bg-white z-[9999]">
         <div className="my-auto">
           <img src="/logo.svg" alt="A plus" />
         </div>
@@ -48,7 +48,7 @@ const Nav = () => {
         </div>
       </nav>
       <aside className={`${showNav ? "block mobile-navigation" : "hidden"}`}>
-        <ul className="fixed h-[100vh] w-[100vw] z-[100] bg-white flex flex-col text-right">
+        <ul className="fixed h-[100vh] w-[100vw] z-[100] bg-white flex flex-col text-right mt-20">
           {menuItems.map(({ id, label, link }) => (
             <a
               key={id}

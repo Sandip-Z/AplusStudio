@@ -17,7 +17,7 @@ const NewsLetter = () => {
   const [isDesktop] = useIsDesktop();
 
   return (
-    <div className="relative my-32 lg:my-40 lg:mr-20 px-5 lg:px-0" id="contact">
+    <div className="relative lg:mr-20 px-5 lg:px-0" id="contact">
       <section className="bg-[#F4F9FF] rounded-[75px] flex flex-col lg:flex-row lg:justify-between">
         <div className="lg:py-20 px-5 py-10 lg:px-20 text-center">
           <SectionHeading

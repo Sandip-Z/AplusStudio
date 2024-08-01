@@ -11,17 +11,19 @@ import { Testimonial } from "./sections/Testimonial";
 
 function App() {
   return (
-    <main className="lg:ml-16">
+    <>
       <Nav />
-      <Header />
-      <ClientSection />
-      <BussinessSection />
-      <AboutSection />
-      <Testimonial />
-      <NewsLetter />
-      <Footer />
-      <Copyright />
-    </main>
+      <main className="lg:ml-16">
+        <Header />
+        <ClientSection />
+        <BussinessSection />
+        <AboutSection />
+        <Testimonial />
+        <NewsLetter />
+        <Footer />
+        <Copyright />
+      </main>
+    </>
   );
 }
 

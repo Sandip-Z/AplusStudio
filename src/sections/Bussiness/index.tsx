@@ -39,7 +39,7 @@ const SERVICES = [
 const BussinessSection = () => {
   return (
     <section
-      className="flex flex-col lg:flex-row mt-20 lg:mt-10 mb-20 lg:mb-40 px-5 sm:px-0"
+      className="flex flex-col lg:flex-row px-5 sm:px-0 pt-20"
       id="what-we-do"
     >
       <div className="my-auto lg:w-[550px] relative text-center lg:text-left">

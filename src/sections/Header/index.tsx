@@ -11,7 +11,7 @@ const PARAGRPH =
 const Header = () => {
   return (
     <header
-      className="flex flex-col lg:flex-row relative space-between mb-20 sm:mb-40 lg:mt-5 pt-32 lg:pt-0"
+      className="flex flex-col lg:flex-row relative space-between lg:mt-5 pt-32 lg:pt-0"
       id="home"
     >
       <div className="my-auto">
