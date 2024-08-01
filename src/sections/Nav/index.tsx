@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 const menuItems = [
   { id: "home", label: "Home", link: "#home" },
@@ -11,9 +12,14 @@ const menuItems = [
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
+  const [position, setPosition] = useState({
+    left: undefined,
+    width: undefined,
+    opacity: 0,
+  });
   return (
     <>
-      <nav className="fixed py-3 px-7 mt-[-20px] w-[100vw] justify-between hidden lg:flex bg-white z-[9999]">
+      <nav className="fixed py-3 px-7 mt-[-20px] w-[100vw] justify-between hidden lg:flex bg-white z-[9999] shadow-lg">
         <div className="my-auto">
           <img src="/logo.svg" alt="A plus" />
         </div>
@@ -26,9 +32,13 @@ const Nav = () => {
                 target={id === "blog" ? "_blank" : "_self"}
                 rel="noreferrer"
               >
-                <li className="mx-5 p-2">{label}</li>
+                <Tab label={label} setPosition={setPosition} key={label} />
               </a>
             ))}
+            <motion.li
+              animate={position}
+              className="absolute hidden z-0 h-[40px] w-24 rounded-full bg-black"
+            />
           </ul>
         </div>
       </nav>
@@ -62,6 +72,30 @@ const Nav = () => {
         </ul>
       </aside>
     </>
+  );
+};
+
+const Tab = ({ label, setPosition }) => {
+  const tabRef = useRef<any>(null);
+  return (
+    <li
+      ref={tabRef}
+      className="relative z-10 block cursor-pointer px-5 py-2 uppercase text-white mix-blend-difference"
+      onMouseEnter={() => {
+        if (!tabRef.current) return;
+        const { width } = tabRef.current.getBoundingClientRect();
+        setPosition({
+          width,
+          opacity: 1,
+          left: tabRef.current.offsetLeft,
+        });
+      }}
+      onMouseLeave={() => {
+        setPosition((pv) => ({ ...pv, opacity: 0 }));
+      }}
+    >
+      {label}
+    </li>
   );
 };
 
