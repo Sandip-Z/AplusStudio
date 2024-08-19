@@ -24,7 +24,7 @@ const Header = () => {
           animate={{ y: 0, scale: 1, opacity: 1 }}
           transition={{ type: "keyframe", stiffness: 100, delay: 0.4 }}
         >
-          <Button label="Contact Now" />
+          <Button label="Contact Now" hoverBgColor="bg-blue-500" />
         </motion.div>
         <div className="hidden lg:block absolute lg:bottom-[35px] z-[-1] lg:left-[-40px]">
           <Circles />
