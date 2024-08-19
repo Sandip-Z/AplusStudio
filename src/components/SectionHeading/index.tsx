@@ -31,7 +31,7 @@ const SectionHeading = ({ text, paragraph, id }: SectionHeadingProps) => {
       </motion.h5>
       {paragraph ? (
         <motion.p
-          className="mt-8 leading-5 text-[#565656] leading-6 relative z-10"
+          className="mt-8 text-[#565656] leading-6 relative z-10"
           variants={fadeInAnimationVariants}
           initial="initial"
           whileInView="animate"

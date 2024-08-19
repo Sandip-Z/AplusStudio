@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const menuItems = [
@@ -17,6 +17,15 @@ const Nav = () => {
     width: undefined,
     opacity: 0,
   });
+
+  useEffect(() => {
+    if (showNav) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [showNav]);
+
   return (
     <>
       <nav className="fixed py-3 px-7 mt-[-20px] w-[100vw] justify-between hidden lg:flex bg-white z-[9999] shadow-lg">
@@ -50,19 +59,20 @@ const Nav = () => {
         <div className="my-auto">
           <button onClick={() => setShowNav(!showNav)}>
             {showNav ? (
-              <span className="text-2xl text-white">&#10005;</span>
+              <span className="block text-2xl text-white">&#10005;</span>
             ) : (
-              <span className="text-2xl text-white">&#9776;</span>
+              <span className="block text-2xl text-white">&#9776;</span>
             )}
           </button>
         </div>
       </nav>
       <aside className={`${showNav ? "block mobile-navigation" : "hidden"}`}>
-        <ul className="fixed h-[100vh] w-[100vw] z-[100] bg-white flex flex-col text-right mt-20">
+        <ul className="fixed h-[100vh] w-[100vw] z-[100] bg-white flex flex-col text-right mt-16">
           {menuItems.map(({ id, label, link }) => (
             <a
               key={id}
               href={link}
+              onClick={() => setShowNav(false)}
               target={id === "blog" ? "_blank" : "_self"}
               rel="noreferrer"
             >
