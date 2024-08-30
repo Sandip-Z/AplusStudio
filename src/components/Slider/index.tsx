@@ -3,35 +3,35 @@ import { useEffect, useState } from "react";
 const DATA = [
   {
     id: 0,
-    image: "/0.png",
-    name: "Aroan Perry",
+    image: "/5.jpg",
+    name: "NetWave Solutions",
     review:
       "Redefining Online Company, As an online company for Online Products. As a knowledgeable consumer in the digital era, you strive to stay informed about the latest and greatest online products.",
   },
   {
     id: 1,
-    image: "/1.jpeg",
-    name: "Lucanus Abel",
+    image: "/9.jpg",
+    name: "Sophia Bennett",
     review:
       "Look no further – A+ Studio is here to revolutionize your online shopping experience. Paving its way into the hearts of Gen-Z audiences, this online company offers a diverse range of cutting-edge products that cater to your every need.",
   },
   {
     id: 2,
-    image: "/2.png",
-    name: "Jun Johannes",
+    image: "/6.jpg",
+    name: "Ethan Carter",
     review:
       "One of the standout features of A+ Studio is their commitment to quality. Uniting with renowned brands and trusted suppliers, they ensure that only top-notch products make it to your virtual doorstep.",
   },
   {
     id: 3,
-    image: "/3.png",
-    name: "Nava Sandrine",
+    image: "/8.jpg",
+    name: "Liam Hayes",
     review:
       " A+ Studio brings reliability and longevity to the forefront. What truly sets A+ Studio apart from the competition is the level of authenticity embedded in every product. As a gen-z consumer, you prioritize uniqueness and individuality.",
   },
   {
     id: 4,
-    image: "/4.png",
+    image: "/10.jpg",
     name: "Sampson Khánh",
     review:
       "Their product lineup boasts a wide array of exclusive items, designed to make a statement. Stand out from the crowd with fashion-forward apparel, avant-garde accessories, and quirky home",

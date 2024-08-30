@@ -24,7 +24,7 @@ const BussinessBox = ({
 }: IBussinessProps) => {
   return (
     <motion.div
-      className="rounded-[40px] shadow-lg w-[auto] sm:w-[308px] sm:h-[379px] p-8 bg-white z-10 border lg:border-0"
+      className="rounded-[40px] shadow hover:shadow-lg w-[auto] sm:w-[308px] sm:h-[379px] p-8 bg-white z-10 border lg:border-0"
       variants={bussinessCardAnimationVariants}
       initial="initial"
       whileInView={"animate"}
