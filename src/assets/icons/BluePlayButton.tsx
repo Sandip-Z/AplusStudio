@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { AboutSectionType } from "../../sections/About";
 
-const BluePlayButton = () => {
+const BluePlayButton = ({ setPlay }: AboutSectionType) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -13,6 +14,7 @@ const BluePlayButton = () => {
       className="hover:cursor-pointer"
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
+      onClick={() => setPlay(true)}
     >
       <g clipPath="url(#clip0_2_593)">
         <rect

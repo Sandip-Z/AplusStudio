@@ -15,7 +15,11 @@ const AboutSectionAnimationVariation = {
   },
 };
 
-const AboutSection = () => {
+export type AboutSectionType = {
+  setPlay: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const AboutSection = ({ setPlay }: AboutSectionType) => {
   return (
     <section
       className="flex flex-col lg:flex-row  px-5 sm:px-10 pt-20"
@@ -34,7 +38,7 @@ const AboutSection = () => {
           whileInView={"animate"}
         />
         <div className="absolute top-[40%] left-[40%] sm:left-[42%]">
-          <BluePlayButton />
+          <BluePlayButton setPlay={setPlay} />
         </div>
         <div className="absolute bottom-[-60px] right-[-50px] z-[-1] hidden lg:block">
           <HeaderCircle fill="#FFF5DB" />
